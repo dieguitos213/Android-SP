@@ -1,0 +1,45 @@
+package com.ug.telescopio;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+	
+	Button btnSearch;
+	Button btnOpenActivity; //Variables Globales que representan a los botones.
+	public static final String TAG = MainActivity.class.toString();
+
+    @Override//ciclo de Vida.
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);//ancestro.
+        setContentView(R.layout.activity_main);//layout activity main.
+        btnSearch = (Button) findViewById(R.id.btnSearch);
+        btnOpenActivity = (Button) findViewById(R.id.btnOpenActivity);
+        ButtonListener listener = newButtonListener();
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+    class ButtonListener implements OnClickListener{
+
+		@Override
+		public void onClick(View arg0) {
+			Log.i(TAG, "hizo click!");
+			Toast.makeText(getApplicationContext(), "hizo click!", Toast.LENGTH_SHORT).show();
+		}
+    	
+    }
+    
+}
