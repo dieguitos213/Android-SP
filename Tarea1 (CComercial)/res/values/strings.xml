@@ -5,5 +5,13 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_detalles">DetallesActivity</string>
+    <string name="centro_comercial">Centro Comercial LD</string>
+    <string name="horarios">Horarios: </string>
+    <string name="website">WebSite: </string>
+    <string name="email">Email: </string>
+    <string name="call">Llamar</string>
+    <string name="imagen">Imagen</string>
+    <string name="comment">Saltarin</string>
+    <string name="title_activity_image">Image</string>
 
 </resources>

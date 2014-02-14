@@ -11,6 +11,10 @@
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>
+	<section name="RefactoringWizard.preview">
+		<item value="400" key="height"/>
+		<item value="600" key="width"/>
+	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="javadoc">
@@ -36,8 +40,8 @@
 	<section name="JavadocWizardDialog">
 		<item value="600" key="DIALOG_WIDTH"/>
 		<item value="1" key="DIALOG_Y_ORIGIN"/>
-		<item value="309" key="DIALOG_X_ORIGIN"/>
 		<item value="582" key="DIALOG_HEIGHT"/>
+		<item value="309" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>

@@ -3,16 +3,12 @@ package com.luis.tarea1;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
-
-
-
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -76,6 +72,18 @@ public class MainActivity extends ListActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		int item_id = item.getItemId();
+		Intent intent;
+		if(item_id == R.id.imagen){
+			intent = new Intent(this,
+					Image.class);
+			 startActivity(intent);
+		}
 		return true;
 	}
 	

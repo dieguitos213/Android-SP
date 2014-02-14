@@ -26,6 +26,10 @@
             android:name="com.luis.tarea1.DetallesActivity"
             android:label="@string/title_activity_detalles" >
         </activity>
+        <activity
+            android:name="com.luis.tarea1.Image"
+            android:label="@string/title_activity_image" >
+        </activity>
     </application>
 
 </manifest>

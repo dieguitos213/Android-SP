@@ -1,112 +1,130 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:baselineAligned="false"
     tools:context=".DetallesActivity" >
 
-    <TextView
-        android:id="@+id/txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       
-        android:text="@string/hello_world" />
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.80"
+        android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/txt3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView1"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="23dp"
-        android:text="telefono: " />
+        <LinearLayout
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/txt3"
-        android:layout_below="@+id/textView6"
-        android:layout_marginTop="34dp"
-        android:text="website: " />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/centro_comercial"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+            
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.36"
+                android:text="comercial"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+            
+             <TextView
+                 android:id="@+id/direccion"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="40dp"
+                 android:layout_weight="0.36"
+                 android:text="14av -3.44"
+                 android:textAlignment="center"
+                 android:textSize="20sp" />
+             
+             <TextView
+                 android:id="@+id/telefono"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="40dp"
+                 android:layout_weight="0.36"
+                 android:text="2325695"
+                 android:textAlignment="center"
+                 android:textSize="20sp" />
+             
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginTop="20dp"
+                 android:layout_weight="0.36"
+                 android:text="@string/horarios"
+                 android:textAlignment="center"
+                 android:textSize="20sp" />
+             
+             <TextView
+                 android:id="@+id/horarios"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:layout_weight="0.36"
+                 android:text="domingo 14:55 - 8:55"
+                 android:textAlignment="center"
+                 android:textSize="20sp" />
+             
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_weight="0.36"
+                  android:text="@string/email"
+                  android:textAlignment="center"
+                  android:textSize="20sp" />
+             
+             <TextView
+                 android:id="@+id/email"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:layout_weight="0.36"
+                 android:text="jose@gmail.com"
+                 android:textAlignment="center"
+                 android:textSize="20sp" />
+             
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_weight="0.36"
+                  android:text="@string/website"
+                  android:textAlignment="center"
+                  android:textSize="20sp" />
+             
+             <TextView
+                 android:id="@+id/website"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:layout_weight="0.36"
+                 android:text="www.sdfsd.dsds"
+                 android:textAlignment="center"
+                 android:textSize="20sp" />
+             
+             <Button
+		         android:id="@+id/call"
+		        android:layout_marginLeft="120dp"
+		        android:layout_marginTop="10dp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="20sp"
+		        android:text="@string/call" />
+        </LinearLayout>
+    </ScrollView>
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView6"
-        android:layout_below="@+id/textView7"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView7"
-        android:layout_below="@+id/textView8"
-        android:layout_marginTop="27dp"
-        android:text="email: " />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView8"
-        android:layout_below="@+id/textView9"
-        android:text="TextView" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView10"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
-        android:text="LLamar" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView9"
-        android:layout_below="@+id/textView3"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_below="@+id/textView4"
-        android:layout_marginTop="63dp"
-        android:text="Horario: " />
-
-    <TextView
-        android:id="@+id/txt2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView5"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_marginBottom="26dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/txt2"
-        android:layout_alignRight="@+id/txt"
-        android:text="Direccion: " />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txt2"
-        android:layout_below="@+id/textView5"
-        android:text="TextView" />
-
-</RelativeLayout>
+</LinearLayout>
